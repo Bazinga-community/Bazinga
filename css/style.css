@@ -710,6 +710,7 @@ div {
 
 .projects__info {
   text-align: left;
+  max-width: 650px;
 }
 
 .projects__info p {
@@ -1395,14 +1396,27 @@ div {
 }
 }
 
-.webp .info__bg{ background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url(../img/info/community-bg.webp); }
+.webp .info__bg{ background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url(../img/info/community-bg.webp); background-repeat: no-repeat; background-size: cover;}
 
-.webp .info__bg{ background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/info/community-bg.webp); }
+.webp .info__bg{ background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/info/community-bg.webp); background-repeat: no-repeat; background-size: cover;}
 
-.webp .info__bg{ background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/info/community-bg.webp); }
+.webp .info__bg{ background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/info/community-bg.webp); background-repeat: no-repeat; background-size: cover;}
 
-.webp .page.design .info__bg, .webp .page.reallife .info__bg{ background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url(../img/info/behance-bg.webp); }
+.webp .page.design .info__bg, .webp .page.reallife .info__bg{ background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url(../img/info/behance-bg.webp); background-repeat: no-repeat; background-size: cover;}
 
-.webp .page.design .info__bg, .webp .page.reallife .info__bg{ background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/info/behance-bg.webp); }
+.webp .page.design .info__bg, .webp .page.reallife .info__bg{ background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/info/behance-bg.webp); background-repeat: no-repeat; background-size: cover;}
 
-.webp .page.design .info__bg, .webp .page.reallife .info__bg{ background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/info/behance-bg.webp); }
+.webp .page.design .info__bg, .webp .page.reallife .info__bg{ background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/info/behance-bg.webp); background-repeat: no-repeat; background-size: cover;}
+
+._soon {
+  position: relative;
+}
+
+._soon::after {
+  content: 'SOON';
+  position: absolute;
+  right: -5px;
+  top: -10px;
+  font-size: 8px;
+  color: #939393;
+}
